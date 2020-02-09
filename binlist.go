@@ -16,13 +16,13 @@ type LookUpResponse struct {
 	Brand   string `json:"brand"`
 	Prepaid bool   `json:"prepaid"`
 	Country struct {
-		Numeric   string `json:"numeric"`
-		Alpha2    string `json:"alpha2"`
-		Name      string `json:"name"`
-		Emoji     string `json:"emoji"`
-		Currency  string `json:"currency"`
-		Latitude  int    `json:"latitude"`
-		Longitude int    `json:"longitude"`
+		Numeric   string  `json:"numeric"`
+		Alpha2    string  `json:"alpha2"`
+		Name      string  `json:"name"`
+		Emoji     string  `json:"emoji"`
+		Currency  string  `json:"currency"`
+		Latitude  float64 `json:"latitude"`
+		Longitude float64 `json:"longitude"`
 	} `json:"country"`
 	Bank struct {
 		Name  string `json:"name"`
